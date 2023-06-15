@@ -2,4 +2,4 @@
 
 Pada project kali ini saya mencoba mengimplementasikan prinsip Two Ways Data Binding yang dimana menggunakan teknologi native : HTML CSS/Tailwind Javascript
 
-![](./dist/src/images/PROFILE-MAKER.png)
+![](src/images/PROFILE-MAKER.png)
