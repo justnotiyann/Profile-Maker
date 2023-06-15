@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/output.css">
+    <link rel="stylesheet" href="./src/css/custom.css">
+    <link rel="icon" type="image/x-icon" href="./src/images/heart-solid.svg">
+    <title>Profile Maker</title>
+</head>
+
+<body class="bg-primary-background"
+    style="background-image: url('./src/images/bg.svg');background-position: center; background-color: rgba(213, 198, 255,0.5);">
+    <main class="px-[10em]">
+        <div class="container flex justify-evenly items-start py-10 w-full">
+            <div id="page-content">
+                <form action="" class="flex flex-col gap-y-3">
+                    <!-- Konten halaman pertama -->
+                    <div class="container mb-5 p-5 border-2 border-purple-400 rounded-md shadow-md">
+                        <h1 class="text-7xl font-bold mb-5">Web Profile <span class="block">Generator</span></h1>
+                        <p>Merupakan project bagaimana implementasikan <a
+                                href="https://stackoverflow.com/questions/13504906/what-is-two-way-binding"
+                                class="hover:text-purple-600 duration-200 ease-in-out font-bold" target="_blank">Two
+                                Ways Data
+                                Binding</a>
+                            menggunakan HTML CSS
+                            Javascript Native</p>
+                    </div>
+                    <div class="page page-1 h-[34em]">
+                        <div class="group-input mb-5 flex justify-between gap-x-2 flex-col">
+                            <label for="setPhotoProfile">Masukkan Foto Profile</label>
+                            <p class="text-sm text-slate-600">Rekomendasi ukuran foto 1x1</p>
+                            <input id="setPhotoProfile" type="file" class="form-input rounded-lg border-0"
+                                id="fileInput" accept="image/*">
+                        </div>
+
+                        <div class="group-input mb-5 flex justify-between gap-x-2">
+                            <div class="group-input-name flex flex-col w-1/2">
+                                <label for="setNama">Masukkan Nama Anda</label>
+                                <input id="setNama" type="text" placeholder="Masukkan nama"
+                                    class="form-input rounded-lg border-0">
+                            </div>
+                            <div class="group-input-profesi flex flex-col w-1/2">
+                                <label for="setProfesi">Masukkan Profesi anda</label>
+                                <input id="setProfesi" type="text" placeholder="Masukkan profesi"
+                                    class="form-input rounded-lg border-0">
+                            </div>
+                        </div>
+
+                        <div class="group-input mb-5 flex flex-col">
+                            <label for="setDeskripsi">Masukkan Deskripsi Diri anda</label>
+                            <textarea name="" id="setDeskripsi" cols="10" rows="10"
+                                class="form-textarea rounded-lg border-none"
+                                placeholder="Masukkan deskripsi diri"></textarea>
+                        </div>
+
+                        <div class="group-input mb-5 flex items-center justify-between">
+                            <label for="setEmail">Masukkan Email anda</label>
+                            <input id="setEmail" type="text" placeholder="Masukkan email"
+                                class="form-input rounded-lg border-0 w-3/4">
+                        </div>
+                    </div>
+
+                    <!-- Konten halaman kedua -->
+                    <div class="page page-2 h-[34em]">
+                        <div class="group-input flex justify-around items-center gap-x-5 mb-5">
+                            <div class=" flex flex-col w-1/2 gap-y-3 gap-x-2  group-input-left">
+                                <label for="setAkunGithub">Masukkan Github </label>
+                                <input id="setAkunGithub" type="text" placeholder="Link github"
+                                    class="form-input rounded-lg border-0">
+                            </div>
+                            <div class=" flex flex-col w-1/2 gap-y-3 gap-x-2  group-input-right">
+                                <label for="setAkunTwitter">Masukkan Twitter </label>
+                                <input id="setAkunTwitter" type="text" placeholder="Link Twitter"
+                                    class="form-input rounded-lg border-0">
+                            </div>
+                        </div>
+
+                        <div class="group-input flex justify-around items-center gap-x-5 mb-5">
+
+
+                            <div class=" flex flex-col w-1/2 gap-y-3 gap-x-2  group-input-left">
+                                <label for="setAkunInstagram">Masukkan Instagram</label>
+                                <input id="setAkunInstagram" type="text" placeholder="Link Instagram"
+                                    class="form-input rounded-lg border-0">
+                            </div>
+
+
+                            <div class=" flex flex-col w-1/2 gap-y-3 gap-x-2  group-input-left">
+                                <label for="setAkunLinkedin">Masukkan Linkedin </label>
+                                <input id="setAkunLinkedin" type="text" placeholder="Link Linkedin"
+                                    class="form-input rounded-lg border-0">
+                            </div>
+
+                        </div>
+
+                        <div class="group-input flex justify-around items-center gap-x-5 mb-5">
+                            <div class=" flex flex-col w-1/2 gap-y-3 gap-x-2  group-input-right">
+                                <label for="setAkunDev">Masukkan Akun Dev </label>
+                                <input id="setAkunDev" type="text" placeholder="Link Dev"
+                                    class="form-input rounded-lg border-0">
+                            </div>
+                            <div class=" flex flex-col w-1/2 gap-y-3 gap-x-2  group-input-right">
+                                <label for="setAkunDrrible">Masukkan Akun Dribble </label>
+                                <input id="setAkunDrrible" type="text" placeholder="Link Dribble"
+                                    class="form-input rounded-lg border-0">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </form>
+
+                <ul id="pagination-list" class="mt-5">
+                    <li class="pagination-item active" data-page="1">1</li>
+                    <li class="pagination-item" data-page="2">2</li>
+                </ul>
+            </div>
+            <section class="flex justify-center relative items-start">
+                <div class="card-container flex justify-center bg-primary-white items-center gap-y-5 flex-col w-[30em] rounded-3xl shadow-xl overflow-auto p-10"
+                    id="profile_card">
+                    <div class="card-image flex justify-center items-center">
+                        <img src="./src/images/dummy.png" id="setImage" class="w-56 rounded-full">
+                    </div>
+                    <div class="card-title text-center flex flex-col">
+                        <p class="font-bold text-2xl" id="setNamaText">Joeylene Rivera</p>
+                        <p class="text-lg text-gray-500" id="setProfesiText">Web Developer</p>
+                    </div>
+                    <div class="card-body text-center mx-2 -my-5">
+                        <p id="setDeskripsiText">A kiddo who uses Bootstrap and Laravel in web
+                            development. Currently
+                            playing around with design
+                            via
+                            Figma</p>
+                    </div>
+                    <div class="card-footer flex justify-center items-center flex-col gap-y-8 w-full">
+                        <button class="py-2 px-6 bg-primary-primary text-white rounded-lg">
+                            <p id="setEmailText">
+                                joeylenerivera@gmail.com
+                            </p>
+                        </button>
+
+                        <div class="card-footer-logo flex justify-evenly items-center gap-x-3 w-full z-20 ">
+                            <a href="">
+                                <i class="fa-brands hover:cursor-pointer hover:text-purple-300 duration-200 ease-in-out text-3xl fa-github "
+                                    id="setLinkGithubIcon"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands hover:cursor-pointer hover:text-purple-300 duration-200 ease-in-out text-3xl fa-twitter"
+                                    id="setLinkTwitter"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands hover:cursor-pointer hover:text-purple-300 duration-200 ease-in-out text-3xl fa-instagram"
+                                    id="setLinkInstagram"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands hover:cursor-pointer hover:text-purple-300 duration-200 ease-in-out text-3xl fa-linkedin-in"
+                                    id="setLinkLinkedin"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands hover:cursor-pointer hover:text-purple-300 duration-200 ease-in-out text-3xl fa-dev"
+                                    id="setLinkDev"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-solid hover:cursor-pointer hover:text-purple-300 duration-200 ease-in-out text-3xl fa-basketball"
+                                    id="setLinkDrrible"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer flex justify-around items-center bg-slate-600 py-10 text-white">
+        <div>
+            <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
+                clip-rule="evenodd" class="fill-current">
+                <path
+                    d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
+                </path>
+            </svg>
+            <p>Created with <i class="fa-sharp fa-solid fa-heart text-pink-300"></i> <a
+                    href="https://instagram.com/just_iyann?igshid=MzNlNGNkZWQ4Mg=="
+                    class="hover:text-pink-200 font-bold duration-200 ease-in-out" target="_blank"> bang_iyann</a></p>
+            <p>Design by <a href="https://www.figma.com/community/file/930628644305012735" target="_blank">jorenrui</a>
+            </p>
+        </div>
+        <div>
+            <span class="footer-title">Follow Me</span>
+            <div class="flex justify-between items-center gap-x-3">
+                <a href="https://instagram.com/just_iyann?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><i
+                        class="fa-brands hover:text-pink-200 duration-200 ease-in-out text-5xl fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/muhammadfitrian/" target="_blank"><i
+                        class="fa-brands hover:text-pink-200 duration-200 ease-in-out text-5xl fa-linkedin"></i></a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        const _0x3434a4 = _0x5f23; (function (_0xe7fbbd, _0x328b2c) { const _0x2b45c4 = _0x5f23, _0x5280ff = _0xe7fbbd(); while (!![]) { try { const _0x2d47ec = parseInt(_0x2b45c4(0xac)) / 0x1 * (parseInt(_0x2b45c4(0xb0)) / 0x2) + parseInt(_0x2b45c4(0x86)) / 0x3 * (-parseInt(_0x2b45c4(0x8b)) / 0x4) + parseInt(_0x2b45c4(0x89)) / 0x5 + parseInt(_0x2b45c4(0x9f)) / 0x6 + parseInt(_0x2b45c4(0xa0)) / 0x7 * (-parseInt(_0x2b45c4(0xa8)) / 0x8) + parseInt(_0x2b45c4(0xb1)) / 0x9 * (parseInt(_0x2b45c4(0xa1)) / 0xa) + -parseInt(_0x2b45c4(0xa7)) / 0xb; if (_0x2d47ec === _0x328b2c) break; else _0x5280ff['push'](_0x5280ff['shift']()); } catch (_0x401b4a) { _0x5280ff['push'](_0x5280ff['shift']()); } } }(_0x5eb7, 0x2011b)); const getSetterInput = [{ 'get': _0x3434a4(0x95), 'set': _0x3434a4(0xa9), 'defaultValue': _0x3434a4(0x90) }, { 'get': _0x3434a4(0x97), 'set': _0x3434a4(0x82), 'defaultValue': _0x3434a4(0x9a) }, { 'get': 'setDeskripsi', 'set': 'setDeskripsiText', 'defaultValue': 'A\x20kiddo\x20who\x20uses\x20Bootstrap\x20and\x20Laravel\x20in\x20web\x20development.\x20Currently\x20playing\x20around\x20with\x20design\x20via\x20Figma' }, { 'get': _0x3434a4(0x81), 'set': 'setEmailText', 'defaultValue': _0x3434a4(0x9c) }]; getSetterInput[_0x3434a4(0x74)](_0x1fa222 => { const _0x30c4aa = _0x3434a4, { get: _0x3d5311, set: _0x1b93cf, defaultValue: _0x5e38fb } = _0x1fa222, _0x15390e = document[_0x30c4aa(0x99)](_0x3d5311), _0x58e2eb = document[_0x30c4aa(0x99)](_0x1b93cf); _0x15390e['addEventListener'](_0x30c4aa(0x75), _0x41bf12 => { const _0x488e38 = _0x30c4aa; _0x15390e['value'] === '' ? _0x58e2eb['textContent'] = _0x5e38fb : _0x58e2eb[_0x488e38(0x9b)] = _0x15390e[_0x488e38(0xab)]; }), _0x15390e[_0x30c4aa(0xab)] === '' ? _0x58e2eb[_0x30c4aa(0x9b)] = _0x5e38fb : _0x58e2eb['textContent'] = _0x15390e['value']; }); const getSetIcon = [{ 'get': _0x3434a4(0x8f), 'set': 'setLinkGithubIcon' }, { 'get': _0x3434a4(0x84), 'set': _0x3434a4(0x80) }, { 'get': _0x3434a4(0x8d), 'set': 'setLinkInstagram' }, { 'get': _0x3434a4(0x87), 'set': _0x3434a4(0x8e) }, { 'get': _0x3434a4(0xb3), 'set': _0x3434a4(0x77) }, { 'get': _0x3434a4(0x93), 'set': _0x3434a4(0x83) }]; function _0x5eb7() { const _0x1c2f90 = ['result', 'none', 'pagination-item', 'display', 'change', 'createElement', 'addEventListener', 'page-content', 'setLinkTwitter', 'setEmail', 'setProfesiText', 'setLinkDrrible', 'setAkunTwitter', 'remove', '354YTaGLV', 'setAkunLinkedin', '.page', '1127210hfbWSZ', 'pagination-list', '136bNMtUm', 'active', 'setAkunInstagram', 'setLinkLinkedin', 'setAkunGithub', 'Joeylene\x20Rivera', 'add', 'querySelectorAll', 'setAkunDrrible', 'p-1', 'setNama', 'block', 'setProfesi', 'border-4', 'getElementById', 'Web\x20Developer', 'textContent', 'joeylenerivera@gmail.com', 'border-purple-600', 'rounded-full', '627738SKaCQa', '7hlpdYJ', '667530uqewfV', 'classList', 'setAttribute', 'readAsDataURL', 'style', 'data-page', '151910qMpDrF', '2099464pQAKGq', 'setNamaText', 'src', 'value', '43toUpwl', 'querySelector', '.page.page-', 'files', '688EAceEo', '9xJngAF', 'target', 'setAkunDev', 'innerHTML', 'appendChild', '.pagination-item[data-page=\x22', 'setImage', 'onload', 'forEach', 'input', 'click', 'setLinkDev']; _0x5eb7 = function () { return _0x1c2f90; }; return _0x5eb7(); } function _0x5f23(_0x59120c, _0xf5815c) { const _0x5eb711 = _0x5eb7(); return _0x5f23 = function (_0x5f23a0, _0x1baa3d) { _0x5f23a0 = _0x5f23a0 - 0x73; let _0x52a702 = _0x5eb711[_0x5f23a0]; return _0x52a702; }, _0x5f23(_0x59120c, _0xf5815c); } getSetIcon[_0x3434a4(0x74)](_0x4ab875 => { const _0x5a55bd = _0x3434a4, { get: _0x44eb52, set: _0x41b1d5 } = _0x4ab875, _0x364539 = document['getElementById'](_0x44eb52), _0x18a199 = document[_0x5a55bd(0x99)](_0x41b1d5); _0x364539[_0x5a55bd(0x7e)]('input', function () { const _0x42143a = _0x5a55bd; _0x364539['value'] !== '' ? _0x18a199[_0x42143a(0xa2)][_0x42143a(0x91)]('p-1', _0x42143a(0x9e), 'border-4', _0x42143a(0x9d)) : _0x18a199['classList'][_0x42143a(0x85)](_0x42143a(0x94), _0x42143a(0x9e), _0x42143a(0x98), _0x42143a(0x9d)); }); }); const setPhotoProfile = document[_0x3434a4(0x99)]('setPhotoProfile'), setImage = document[_0x3434a4(0x99)](_0x3434a4(0xb7)); setPhotoProfile[_0x3434a4(0x7e)](_0x3434a4(0x7c), function () { const _0x53c1bf = _0x3434a4, _0x19d02f = setPhotoProfile[_0x53c1bf(0xaf)][0x0], _0x133871 = new FileReader(); _0x133871[_0x53c1bf(0x73)] = function (_0x38fdab) { const _0x161a3d = _0x53c1bf; setImage[_0x161a3d(0xaa)] = _0x38fdab[_0x161a3d(0xb2)][_0x161a3d(0x78)]; }, _0x133871[_0x53c1bf(0xa4)](_0x19d02f); }); const paginationList = document['getElementById'](_0x3434a4(0x8a)), pageContent = document[_0x3434a4(0x99)](_0x3434a4(0x7f)), totalPages = 0x2; function showPage(_0x37ff49) { const _0x2ec724 = _0x3434a4, _0x2a0e86 = document[_0x2ec724(0xad)]('.pagination-item.active'); _0x2a0e86[_0x2ec724(0xa2)][_0x2ec724(0x85)](_0x2ec724(0x8c)); const _0x4f4830 = document['querySelector'](_0x2ec724(0xb6) + _0x37ff49 + '\x22]'); _0x4f4830[_0x2ec724(0xa2)][_0x2ec724(0x91)](_0x2ec724(0x8c)); const _0x49d731 = document['querySelector'](_0x2ec724(0xae) + _0x37ff49), _0x249150 = document[_0x2ec724(0x92)](_0x2ec724(0x88)); _0x249150['forEach'](_0x52d0e7 => { const _0x52b8b3 = _0x2ec724; _0x52d0e7['style'][_0x52b8b3(0x7b)] = _0x52b8b3(0x79); }), _0x49d731[_0x2ec724(0xa5)]['display'] = _0x2ec724(0x96); } function generatePagination() { const _0x4ebf4e = _0x3434a4; paginationList[_0x4ebf4e(0xb4)] = ''; for (let _0x398034 = 0x1; _0x398034 <= totalPages; _0x398034++) { const _0xc0bb6b = document[_0x4ebf4e(0x7d)]('li'); _0xc0bb6b[_0x4ebf4e(0xa2)][_0x4ebf4e(0x91)](_0x4ebf4e(0x7a)), _0xc0bb6b[_0x4ebf4e(0x9b)] = _0x398034, _0xc0bb6b[_0x4ebf4e(0xa3)](_0x4ebf4e(0xa6), _0x398034), _0x398034 === 0x1 && _0xc0bb6b[_0x4ebf4e(0xa2)][_0x4ebf4e(0x91)](_0x4ebf4e(0x8c)), _0xc0bb6b['addEventListener'](_0x4ebf4e(0x76), function () { const _0x1d37fe = _0x4ebf4e, _0x45a55e = parseInt(this['getAttribute'](_0x1d37fe(0xa6))); showPage(_0x45a55e); }), paginationList[_0x4ebf4e(0xb5)](_0xc0bb6b); } } generatePagination(), showPage(0x1);
+    </script>
+    <script src="https://kit.fontawesome.com/c5a4856bc1.js" crossorigin="anonymous" defer></script>
+
+</body>
+
+</html>

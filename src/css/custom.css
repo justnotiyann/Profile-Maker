@@ -1,0 +1,30 @@
+* {
+    scroll-behavior: smooth;
+}
+
+/* Gaya pagination */
+#pagination-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.pagination-item {
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50em;
+    cursor: pointer;
+    margin-right: 1em;
+    animation: 0.5s all ease-in-out;
+}
+
+.pagination-item.active {
+    animation: 0.5s all ease-in-out;
+    background-color: purple;
+    color: white;
+    border-radius: 50em;
+}
